@@ -70,8 +70,8 @@ SEvisual provides an interactive visualization shiny-based App for exploring dat
     SEvisual(iris)          #non-numeric values will be forcibly converted to numeric(eg. Species)
 
 #data.frame convert to SummarizedExperiment with annotation
-    colData <- data.frame(type=sample(c("A", "B"), ncol(mtcars), replace=TRUE))         #add annotations to columns
-    rowData <- data.frame(car=rownames(mtcars))                                         #add annotations to rows
+    colData <- data.frame(type=sample(c("A", "B"), ncol(mtcars), replace=TRUE))    #add annotations to columns
+    rowData <- data.frame(car=rownames(mtcars))                                    #add annotations to rows
     mtcars.SE <- SummarizedExperiment(assay=mtcars, colData=colData, rowData=rowData)
     SEvisual(mtcars.SE)
 ```
