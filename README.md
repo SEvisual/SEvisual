@@ -41,9 +41,9 @@ SEvisual provides an interactive visualization shiny-based App for exploring dat
 ``` r
     if (!requireNamespace("BiocManager", quietly=TRUE)) install.packages("BiocManager")
     packages <- c('tidyverse', "cli", "shiny", "bslib", "plotly", "qs", "SummarizedExperiment", "bsicons", 
-                    "htmltools", "colourpicker", "RColorBrewer", "shinyWidgets", "waiter", "shinyalert",
-                    "DT", "shinycustomloader", "GetoptLong", "kableExtra", "circlize", "impute",
-                    "ComplexHeatmap", "InteractiveComplexHeatmap", "pheatmap")
+                "htmltools", "colourpicker", "RColorBrewer", "shinyWidgets", "waiter", "shinyalert",
+                "DT", "shinycustomloader", "GetoptLong", "kableExtra", "circlize", "impute",
+                "ComplexHeatmap", "InteractiveComplexHeatmap", "pheatmap")
     for(i in 1:length(packages)){
         if (!requireNamespace(packages[i], quietly=TRUE)) BiocManager::install(packages[i], update=FALSE)
     }
