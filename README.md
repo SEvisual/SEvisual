@@ -45,7 +45,9 @@ SEvisual provides an interactive visualization shiny-based App for exploring dat
                 "DT", "shinycustomloader", "GetoptLong", "kableExtra", "circlize", "impute",
                 "ComplexHeatmap", "InteractiveComplexHeatmap", "pheatmap", "bsicons")
     for(i in 1:length(packages)){
-        if (!requireNamespace(packages[i], quietly=TRUE)) BiocManager::install(packages[i], update=FALSE)
+        if (!requireNamespace(packages[i], quietly=TRUE)){
+            BiocManager::install(packages[i], update=FALSE)
+        }
     }
 ```
 
