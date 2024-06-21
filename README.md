@@ -2,6 +2,8 @@
 
 # SEvisual
 
+# The package will be released on July 7, 2024.
+
 [![CRAN status](https://www.r-pkg.org/badges/version/bslib)](https://cran.r-project.org/package=bslib)
 
 
